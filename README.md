@@ -5,7 +5,7 @@ A fluent, diff-aware audit trail for Eloquent models. Logs exactly what changed,
 ## Installation
 
 ```bash
-composer require yourvendor/laravel-audit-trail
+composer require oluokunkabiru/laravel-audit-log-trail
 ```
 
 Publish and run the migration:
@@ -26,7 +26,7 @@ php artisan vendor:publish --tag=audit-config
 Add the `HasAuditTrail` trait to any Eloquent model:
 
 ```php
-use YourVendor\AuditTrail\Traits\HasAuditTrail;
+use Oluokunkabiru\AuditTrail\Traits\HasAuditTrail;
 
 class User extends Model
 {
@@ -54,7 +54,7 @@ class User extends Model
 ## Querying audit logs
 
 ```php
-use YourVendor\AuditTrail\Models\AuditLog;
+use Oluokunkabiru\AuditTrail\Models\AuditLog;
 
 // All changes to a specific model instance
 AuditLog::forModel($user)->latest()->get();
@@ -82,7 +82,7 @@ $user->latestAudit;
 ## Suppression
 
 ```php
-use YourVendor\AuditTrail\Facades\Auditor;
+use Oluokunkabiru\AuditTrail\Facades\Auditor;
 
 // Suppress all logging inside the callback
 Auditor::suppress(function () {
@@ -159,7 +159,7 @@ return [
 Implement the `AuditDriver` contract and bind it in a service provider:
 
 ```php
-use YourVendor\AuditTrail\Drivers\Contracts\AuditDriver;
+use Oluokunkabiru\AuditTrail\Drivers\Contracts\AuditDriver;
 
 class ElasticsearchAuditDriver implements AuditDriver
 {
@@ -174,7 +174,7 @@ $this->app->bind(AuditDriver::class, ElasticsearchAuditDriver::class);
 ## Listening to audit events
 
 ```php
-use YourVendor\AuditTrail\Events\AuditLogged;
+use Oluokunkabiru\AuditTrail\Events\AuditLogged;
 
 Event::listen(AuditLogged::class, function (AuditLogged $event) {
     // $event->entry is an AuditEntry value object
