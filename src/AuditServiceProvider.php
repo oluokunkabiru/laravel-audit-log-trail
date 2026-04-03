@@ -65,5 +65,21 @@ class AuditServiceProvider extends ServiceProvider
 
         // Always load migrations so they can be run without publishing
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        // Views
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'audit-trail');
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/audit-trail'),
+        ], 'audit-trail-views');
+
+        // Livewire Component
+        if (class_exists(\Livewire\Livewire::class)) {
+            \Livewire\Livewire::component('audit-trail-dashboard', \Oluokunkabiru\AuditTrail\Http\Livewire\Dashboard::class);
+        }
+
+        // Routes
+        if (config('audit.dashboard_enabled', true)) {
+            $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        }
     }
 }
