@@ -1,13 +1,13 @@
 {
-    "name": "yourvendor/laravel-audit-trail",
-    "description": "Fluent, diff-aware audit trail for Eloquent models — with multi-tenant support and a swappable driver system.",
+    "name": "oluokunkabiru/laravel-audit-log-trail",
+    "description": "A robust, diff-aware audit trail package for Laravel Eloquent models.",
     "type": "library",
     "license": "MIT",
     "keywords": ["laravel", "audit", "trail", "log", "eloquent", "diff", "history"],
     "authors": [
         {
-            "name": "Your Name",
-            "email": "you@example.com"
+            "name": "Oluokun KabiruAdesina" ,
+            "email": "oluokunkabiru2015@gmail.com"
         }
     ],
     "require": {
