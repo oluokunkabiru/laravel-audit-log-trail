@@ -1,3 +1,3 @@
 <?php
 
-uses(\YourVendor\AuditTrail\Tests\TestCase::class)->in('Feature', 'Unit');
+uses(\Oluokunkabiru\AuditTrail\Tests\TestCase::class)->in('Feature', 'Unit');

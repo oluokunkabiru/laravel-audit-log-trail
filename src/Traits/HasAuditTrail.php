@@ -1,9 +1,9 @@
 <?php
 
-namespace YourVendor\AuditTrail\Traits;
+namespace Oluokunkabiru\AuditTrail\Traits;
 
 use Closure;
-use YourVendor\AuditTrail\Facades\Auditor;
+use Oluokunkabiru\AuditTrail\Facades\Auditor;
 
 /**
  * Mix this trait into any Eloquent model to enable audit logging.
@@ -81,7 +81,7 @@ trait HasAuditTrail
     public function auditLogs(): \Illuminate\Database\Eloquent\Relations\MorphMany
     {
         return $this->morphMany(
-            config('audit.model', \YourVendor\AuditTrail\Models\AuditLog::class),
+            config('audit.model', \Oluokunkabiru\AuditTrail\Models\AuditLog::class),
             'auditable',
         );
     }
@@ -92,7 +92,7 @@ trait HasAuditTrail
     public function latestAudit(): \Illuminate\Database\Eloquent\Relations\MorphOne
     {
         return $this->morphOne(
-            config('audit.model', \YourVendor\AuditTrail\Models\AuditLog::class),
+            config('audit.model', \Oluokunkabiru\AuditTrail\Models\AuditLog::class),
             'auditable',
         )->latestOfMany();
     }

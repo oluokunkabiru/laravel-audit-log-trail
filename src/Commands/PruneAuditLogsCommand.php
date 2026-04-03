@@ -1,9 +1,9 @@
 <?php
 
-namespace YourVendor\AuditTrail\Commands;
+namespace Oluokunkabiru\AuditTrail\Commands;
 
 use Illuminate\Console\Command;
-use YourVendor\AuditTrail\Facades\Auditor;
+use Oluokunkabiru\AuditTrail\Facades\Auditor;
 
 class PruneAuditLogsCommand extends Command
 {

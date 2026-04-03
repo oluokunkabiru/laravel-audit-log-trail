@@ -1,8 +1,8 @@
 <?php
 
-namespace YourVendor\AuditTrail\Drivers\Contracts;
+namespace Oluokunkabiru\AuditTrail\Drivers\Contracts;
 
-use YourVendor\AuditTrail\Data\AuditEntry;
+use Oluokunkabiru\AuditTrail\Data\AuditEntry;
 
 interface AuditDriver
 {

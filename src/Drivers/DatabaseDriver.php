@@ -1,11 +1,11 @@
 <?php
 
-namespace YourVendor\AuditTrail\Drivers;
+namespace Oluokunkabiru\AuditTrail\Drivers;
 
 use Illuminate\Support\Str;
-use YourVendor\AuditTrail\Data\AuditEntry;
-use YourVendor\AuditTrail\Drivers\Contracts\AuditDriver;
-use YourVendor\AuditTrail\Models\AuditLog;
+use Oluokunkabiru\AuditTrail\Data\AuditEntry;
+use Oluokunkabiru\AuditTrail\Drivers\Contracts\AuditDriver;
+use Oluokunkabiru\AuditTrail\Models\AuditLog;
 
 class DatabaseDriver implements AuditDriver
 {

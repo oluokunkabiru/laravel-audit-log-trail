@@ -1,9 +1,9 @@
 <?php
 
-namespace YourVendor\AuditTrail\Tests;
+namespace Oluokunkabiru\AuditTrail\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use YourVendor\AuditTrail\AuditServiceProvider;
+use Oluokunkabiru\AuditTrail\AuditServiceProvider;
 
 class TestCase extends BaseTestCase
 {

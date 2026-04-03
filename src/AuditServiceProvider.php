@@ -1,13 +1,13 @@
 <?php
 
-namespace YourVendor\AuditTrail;
+namespace Oluokunkabiru\AuditTrail;
 
 use Illuminate\Support\ServiceProvider;
-use YourVendor\AuditTrail\AuditManager;
-use YourVendor\AuditTrail\Drivers\Contracts\AuditDriver;
-use YourVendor\AuditTrail\Drivers\DatabaseDriver;
-use YourVendor\AuditTrail\Engine\ContextResolver;
-use YourVendor\AuditTrail\Engine\DiffEngine;
+use Oluokunkabiru\AuditTrail\AuditManager;
+use Oluokunkabiru\AuditTrail\Drivers\Contracts\AuditDriver;
+use Oluokunkabiru\AuditTrail\Drivers\DatabaseDriver;
+use Oluokunkabiru\AuditTrail\Engine\ContextResolver;
+use Oluokunkabiru\AuditTrail\Engine\DiffEngine;
 
 class AuditServiceProvider extends ServiceProvider
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace YourVendor\AuditTrail\Jobs;
+namespace Oluokunkabiru\AuditTrail\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use YourVendor\AuditTrail\Data\AuditEntry;
-use YourVendor\AuditTrail\Facades\Auditor;
+use Oluokunkabiru\AuditTrail\Data\AuditEntry;
+use Oluokunkabiru\AuditTrail\Facades\Auditor;
 
 class WriteAuditLog implements ShouldQueue
 {

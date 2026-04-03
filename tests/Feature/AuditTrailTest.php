@@ -3,9 +3,9 @@
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use YourVendor\AuditTrail\Facades\Auditor;
-use YourVendor\AuditTrail\Models\AuditLog;
-use YourVendor\AuditTrail\Traits\HasAuditTrail;
+use Oluokunkabiru\AuditTrail\Facades\Auditor;
+use Oluokunkabiru\AuditTrail\Models\AuditLog;
+use Oluokunkabiru\AuditTrail\Traits\HasAuditTrail;
 
 // ─── Test model ───────────────────────────────────────────────────────────────
 

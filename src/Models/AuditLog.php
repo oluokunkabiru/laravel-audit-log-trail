@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\AuditTrail\Models;
+namespace Oluokunkabiru\AuditTrail\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

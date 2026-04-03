@@ -1,15 +1,15 @@
 <?php
 
-namespace YourVendor\AuditTrail;
+namespace Oluokunkabiru\AuditTrail;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;
-use YourVendor\AuditTrail\Data\AuditEntry;
-use YourVendor\AuditTrail\Drivers\Contracts\AuditDriver;
-use YourVendor\AuditTrail\Engine\ContextResolver;
-use YourVendor\AuditTrail\Engine\DiffEngine;
-use YourVendor\AuditTrail\Events\AuditLogged;
-use YourVendor\AuditTrail\Jobs\WriteAuditLog;
+use Oluokunkabiru\AuditTrail\Data\AuditEntry;
+use Oluokunkabiru\AuditTrail\Drivers\Contracts\AuditDriver;
+use Oluokunkabiru\AuditTrail\Engine\ContextResolver;
+use Oluokunkabiru\AuditTrail\Engine\DiffEngine;
+use Oluokunkabiru\AuditTrail\Events\AuditLogged;
+use Oluokunkabiru\AuditTrail\Jobs\WriteAuditLog;
 
 class AuditManager
 {

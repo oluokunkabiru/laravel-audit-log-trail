@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model;
-use YourVendor\AuditTrail\Engine\DiffEngine;
+use Oluokunkabiru\AuditTrail\Engine\DiffEngine;
 
 // ─── Minimal fake model for unit tests ───────────────────────────────────────
 

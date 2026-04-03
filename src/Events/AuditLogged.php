@@ -1,9 +1,9 @@
 <?php
 
-namespace YourVendor\AuditTrail\Events;
+namespace Oluokunkabiru\AuditTrail\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
-use YourVendor\AuditTrail\Data\AuditEntry;
+use Oluokunkabiru\AuditTrail\Data\AuditEntry;
 
 class AuditLogged
 {

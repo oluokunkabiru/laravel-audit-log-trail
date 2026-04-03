@@ -25,21 +25,21 @@
     },
     "autoload": {
         "psr-4": {
-            "YourVendor\\AuditTrail\\": "src/"
+            "Oluokunkabiru\\AuditTrail\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "YourVendor\\AuditTrail\\Tests\\": "tests/"
+            "Oluokunkabiru\\AuditTrail\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "YourVendor\\AuditTrail\\AuditServiceProvider"
+                "Oluokunkabiru\\AuditTrail\\AuditServiceProvider"
             ],
             "aliases": {
-                "Auditor": "YourVendor\\AuditTrail\\Facades\\Auditor"
+                "Auditor": "Oluokunkabiru\\AuditTrail\\Facades\\Auditor"
             }
         }
     },
