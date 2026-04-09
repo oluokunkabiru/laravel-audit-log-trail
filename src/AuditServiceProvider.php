@@ -27,9 +27,7 @@ class AuditServiceProvider extends ServiceProvider
 
         // Bind engine components
         $this->app->singleton(DiffEngine::class, function () {
-            return new DiffEngine(
-                globalExclude: config('audit.global_exclude', []),
-            );
+            return new DiffEngine(config('audit.global_exclude', []));
         });
 
         $this->app->singleton(ContextResolver::class, fn() => new ContextResolver());

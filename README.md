@@ -36,6 +36,18 @@ class User extends Model
 
 That's it. Every `created`, `updated`, `deleted`, and `restored` event is now logged automatically.
 
+## Control Dashboard
+
+The package comes with a beautiful, Livewire-powered control dashboard out of the box! 
+Access the dashboard at `/audit-trail` in your browser to manage your audit logs.
+
+Features available from the Dashboard include:
+- **Discover Models**: Automatically detect and list all Eloquent models in your project.
+- **Enable/Disable Tracking**: Instantly inject or remove the `HasAuditTrail` trait from your PHP models with a single click.
+- **Global Settings**: Configure the audit storage driver, background queues, and pruning policies directly from the UI natively connecting back to your `.env` file.
+
+*Requires Livewire 3.*
+
 ## Controlling which fields are logged
 
 ```php
